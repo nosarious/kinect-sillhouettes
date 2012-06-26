@@ -13,4 +13,20 @@ These steps can be done with several pieces of software, but I am going to conce
 
 Each of these systems has various software which we will be using as well. The kinect part and the other part will be OpenCV.
 
+For now the goals are:
+
+1. load a background image.
+2. load a cutout image.
+3. open the kinect
+4. set up a vertext sharder (will be used for masking cutout with mask)
+5. draw the background image.
+6. get the kinect image.
+7. ignore any pixel outside a certain range in the image (<100 right now)
+8. rescale the kinect image to the size of the screen.
+9. tie the mask to the cutout using vertex shaders.
+10. draw the masked cutout to the screen.
+11. repeat
+
+there is an error code that comes up for this. Ignore it. It doesn't seem to make a difference.
+
 
